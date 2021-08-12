@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Elanco Brand Page</title>
+	<title>Tyson Brand Page</title>
 </head>
 <body>
 <style>
@@ -18,7 +18,7 @@
 	*{ margin : 0; padding : 0; }
 	img{ width : 100%; }
 
-	.elanco-cta-box{
+	.cta-box{
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -26,9 +26,9 @@
 		text-decoration: none;
 	}
 
-	.elanco-cta-box a{
-		color : #fff;
-		background-color : #00205b;
+	.cta-box a{
+		color : #00205B;
+		background-color : #fff;
 		height: 54px;
 		font-family: "PetcoCircularTT-Bold", arial !important;
 		font-size: 16px;
@@ -39,10 +39,10 @@
 		text-decoration: none;
 		padding: 0 30px;
 		border-radius: 5px;
-		width: 200px;
+		width: 150px;
 	}
 
-	/* Elanco brand page */
+	/* Tyson brand page */
 	.brand-page-section{
 		display: block;
 	}
@@ -64,6 +64,69 @@
 		font-weight: 600;
 	}
 
+	.flex-box{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	/* Top Hero section */
+	.brand-page-section__top-hero .brand-page-section__top-hero--content{
+		background-color: #00205B;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col{
+		padding: 20px 15px;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col:first-child{
+		width : 40%;
+		padding-left: 10%;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child{
+		background-color: #88D6F7;
+		width : 60%;
+		position: relative;
+		padding-right: 10%;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__logo{
+		max-width: 140px;
+		margin-left: -10px;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__headline{
+		color : #fff;
+		font-family: "PetcoCircularTT-Bold", arial !important;
+		font-size: 36px;
+		max-width: 450px;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__subhead{
+		color : #fff;
+		font-family: "PetcoCircularTT-Regular", arial !important;
+		font-size: 20px;
+		padding: 30px 0;
+		max-width: 400px;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__cta{
+		justify-content: flex-start;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__badge{
+		max-width: 100px;
+		position: absolute;
+		left: 30px;
+		top: 20px;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__img{
+		margin: 0 auto;
+	}
+
+
 	.m-hide {
 		display: block;
 	}
@@ -72,17 +135,115 @@
 	}
 
 	@media screen and (min-width: 1024px) and (max-width: 1200px) {
-		/* Top Hero */
-		.brand-page-section__top-hero--content .col{
-			padding: 36px;
+		/* Top Hero section */
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:first-child{
+			padding-left: 5%;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child{
+			padding-right: 5%;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__headline{
+			font-size: 30px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__subhead{
+			font-size: 18px;
+			padding: 25px 0;
 		}
 
 
 	}
-	@media screen and (min-width: 768px) and (max-width: 1023px) {
 
+
+	@media screen and (min-width: 768px) and (max-width: 1023px) {
+		/* Top Hero section */
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:first-child{
+			padding-left: 4%;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child{
+			padding-right: 4%;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__badge{
+			left: 20px;
+			top: 20px;
+			max-width: 80px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__headline{
+			font-size: 24px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__subhead{
+			font-size: 16px;
+			padding: 20px 0;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__cta a{
+			width: 130px;
+		}
 	}
+
+
 	@media screen and (max-width: 767px) {
+		/* Top Hero section */
+		.brand-page-section__top-hero .brand-page-section__top-hero--content{
+			flex-wrap: wrap;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:first-child{
+			width: 100%;
+			padding: 30px 15px;
+			order: 2;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child{
+			width: 100%;
+			padding: 30px 15px 20px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__badge{
+			left: 85%;
+    		top: 15px;
+			max-width: 50px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__logo{
+			left: 20px;
+			top: 20px;
+			max-width: 80px;
+			position: absolute;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__headline{
+			font-size: 25px;
+			max-width: 280px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__subhead{
+			font-size: 16px;
+			padding: 20px 0;
+			max-width: 320px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__cta a{
+			width: 130px;
+		}
+
+
+
+
 		.m-hide {
 		display: none;
 		}
@@ -96,6 +257,52 @@
 		
 
 	}
+
+	@media screen and (min-width : 460px) and (max-width: 768px) {
+
+		/* Top Hero section */
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child{
+			width: 100%;
+			padding: 30px 15px 20px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__badge{
+			left: 85%;
+    		top: 15px;
+			max-width: 50px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__logo{
+			left: 20px;
+			top: 20px;
+			max-width: 80px;
+			position: absolute;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__headline{
+			font-size: 25px;
+			max-width: 100%;
+			padding: 0 19%;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__subhead{
+			font-size: 16px;
+			padding: 20px 19%;
+			max-width: 100%;
+		}
+
+	}
+
+
 	@media screen and (max-width: 480px) {
 
 
@@ -121,16 +328,20 @@
 	<div class="brand-page-section">
 		<!-- Top hero -->
 		<div class="brand-page-section__top-hero container-fluid">
-			<div class="brand-page-section__top-hero--content container">
+			<div class="brand-page-section__top-hero--content flex-box">
 				<div class="col">
-					<div class="headline">Test Tyson Brand Page</div>
-					<div class="products-shots">
-						
+					<div class="text-wrapper">
+						<div class="text-wrapper__logo m-hide"><img src="images/logo/logo-white.png" /></div>
+						<div class="text-wrapper__headline">ELEVATE YOUR DOG’S MEAL EXPERIENCE</div>
+						<div class="text-wrapper__subhead">True Meals dog food is designed by culinary experts and pet nutritionists.</div>
+						<div class="text-wrapper__cta cta-box"><a href="">SHOP NOW</a></div>
 					</div>
 				</div>
 				<div class="col">
-					<div class="logo">
-						
+					<div class="product-wrapper">
+						<div class="product-wrapper__badge"><img src="images/icon/new-to-petco.png" /> </div>
+						<div class="product-wrapper__logo d-hide"><img src="images/logo/logo-black.png" /> </div>
+						<div class="product-wrapper__img"><img src="images/pov/hero_pov1-dsk.png" /> </div>
 					</div>
 				</div>
 				
