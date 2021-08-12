@@ -16,6 +16,9 @@
 	}
 
 	*{ margin : 0; padding : 0; }
+
+	a{text-decoration: none; display: block;}
+
 	img{ width : 100%; }
 
 	.cta-box{
@@ -70,7 +73,7 @@
 		justify-content: center;
 	}
 
-	/* Top Hero section */
+	/*** Top Hero section ***/
 	.brand-page-section__top-hero .brand-page-section__top-hero--content{
 		background-color: #00205B;
 	}
@@ -124,6 +127,33 @@
 
 	.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__img{
 		margin: 0 auto;
+	}
+
+
+	/* *** Category Section *** */
+	.brand-page-section__category--content{
+		align-items: flex-start;
+		padding: 20px 0;
+	}
+
+	.brand-page-section__category--content .col{
+		width : 25%;
+	}
+
+	.brand-page-section__category--content .col .item-wrapper{
+		padding: 15px;
+		text-align: center;
+	}
+
+	.brand-page-section__category--content .col .item-wrapper__icon{
+		max-width: 150px;
+		margin: 0 auto;
+	}
+
+	.brand-page-section__category--content .col .item-wrapper__text a{
+		color : #000;
+		font-family: "PetcoCircularTT-Bold", arial !important;
+		font-size: 16px;
 	}
 
 
@@ -242,6 +272,34 @@
 		}
 
 
+		/* *** Category Section *** */
+		.brand-page-section__category--content{
+			max-width: 300%;
+			overflow-y: auto;
+			justify-content: space-between;
+		}
+
+		.brand-page-section__category--content .col{
+			min-width: 66%;
+		}
+
+		.brand-page-section__category--content .col .item-wrapper{
+			max-width: 80%;
+			margin: 0 auto;
+		}
+
+		.brand-page-section__category--content .col .item-wrapper__icon{
+			max-width: 150px;
+			margin: 0 auto;
+		}
+
+		.brand-page-section__category--content .col .item-wrapper__text a{
+			color : #000;
+			font-family: "PetcoCircularTT-Bold", arial !important;
+			font-size: 16px;
+		}
+
+
 
 
 		.m-hide {
@@ -345,6 +403,36 @@
 					</div>
 				</div>
 				
+			</div>
+		</div>
+
+		<!-- Category Section -->
+		<div class="brand-page-section__category container-fluid">
+			<div class="brand-page-section__category--content flex-box container">
+				<div class="col">
+					<div class="item-wrapper">
+						<div class="item-wrapper__icon"><a href=""><img src="images/icon/icon1.png" /></a></div>
+						<div class="item-wrapper__text"><a href="">USA-sourced protein and vegetables</a></div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="item-wrapper">
+						<div class="item-wrapper__icon"><a href=""><img src="images/icon/icon2.png" /></a></div>
+						<div class="item-wrapper__text"><a href="">Includes added vitamins, minerals and amino acids dogs need to thrive</a></div>
+					</div>
+				</div>	
+				<div class="col">
+					<div class="item-wrapper">
+						<div class="item-wrapper__icon"><a href=""><img src="images/icon/icon3.png" /></a></div>
+						<div class="item-wrapper__text"><a href="">Gently baked to retain ingredients, nutrients and flavors</a></div>
+					</div>
+				</div>	
+				<div class="col">
+					<div class="item-wrapper">
+						<div class="item-wrapper__icon"><a href=""><img src="images/icon/icon4.png" /></a></div>
+						<div class="item-wrapper__text"><a href="">No artificial flavors or preservatives</a></div>
+					</div>
+				</div>					
 			</div>
 		</div>
 
