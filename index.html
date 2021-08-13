@@ -130,7 +130,11 @@
 	}
 
 
-	/* *** Category Section *** */
+	/*** Category Section ***/
+	.brand-page-section__category{
+		padding: 20px 0;
+	}
+
 	.brand-page-section__category--content{
 		align-items: flex-start;
 		padding: 20px 0;
@@ -156,6 +160,69 @@
 		font-size: 16px;
 		max-width: 300px;
     	margin: 0 auto;
+	}
+
+
+	/*** Products Catelog Section ***/
+	.brand-page-section__catelog--content{
+		align-items: flex-start;
+		padding: 20px 0;
+	}
+
+	.brand-page-section__catelog--content .col{
+		width : 50%;
+	}
+
+	.brand-page-section__catelog--content .col .single-view{
+		text-align: center;
+		padding: 0 15px;
+	}
+
+	.brand-page-section__catelog--content .col .single-view__head{
+		font-family: "PetcoCircularTT-Regular", arial !important;
+		font-size: 25px;
+	}
+
+	.brand-page-section__catelog--content .col .single-view__sub-head{
+		font-family: "PetcoCircularTT-Regular", arial !important;
+		font-size: 16px;
+		padding: 15px 0 50px;
+	}
+
+	.brand-page-section__catelog--content .col .item-wrapper{
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding: 0 15px;
+	}
+
+	.brand-page-section__catelog--content .col .item-wrapper .single-item{
+		padding: 15px;
+		width: 42%;
+		margin: 0 auto;
+	}
+
+	.brand-page-section__catelog--content .col .item-wrapper .single-item__img{
+		max-width: 180px;
+		margin: 0 auto;
+		padding: 0 15px 20px;
+	}
+
+	.brand-page-section__catelog--content .col .item-wrapper .single-item__headline{
+		padding: 10px 0 20px;
+		display: block;
+		border-top: 1px solid #333;
+		font-family: "PetcoCircularTT-Regular", arial !important;
+		font-size: 16px;
+	}
+
+	.brand-page-section__catelog--content .col .item-wrapper .single-item__cta a{
+		color: #001952;
+		font-family: "PetcoCircularTT-Bold", arial !important;
+		font-size: 16px;
+		text-decoration: underline;
+		margin-bottom: 30px;
 	}
 
 
@@ -217,6 +284,11 @@
 
 		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__cta a{
 			width: 130px;
+		}
+
+		/*** Products Catelog Section ***/
+		.brand-page-section__catelog--content .col .item-wrapper .single-item{
+			width: 40%;
 		}
 	}
 
@@ -300,6 +372,36 @@
 			color : #000;
 			font-family: "PetcoCircularTT-Bold", arial !important;
 			font-size: 16px;
+		}
+
+
+		/*** Products Catelog Section ***/
+		.brand-page-section__catelog--content{
+			flex-wrap: wrap;
+		}
+
+		.brand-page-section__catelog--content .col{
+			width: 100%;
+		}
+
+		.brand-page-section__catelog--content .col:last-child{
+			overflow-y: auto;
+		}
+
+		.brand-page-section__catelog--content .col .single-view__sub-head {
+			padding: 15px 0;
+		}
+
+		.brand-page-section__catelog--content .col .item-wrapper{
+			width : 270%;
+			overflow-y: auto;
+			flex-wrap: nowrap;
+			justify-content: space-around;
+			padding: 50px 0;
+		}
+
+		.brand-page-section__catelog--content .col .item-wrapper .single-item{
+			width : 70%;
 		}
 
 
@@ -436,6 +538,46 @@
 						<div class="item-wrapper__text"><a href="">No artificial flavors or preservatives</a></div>
 					</div>
 				</div>					
+			</div>
+		</div>
+
+
+		<!-- Products Catelog Section -->
+		<div class="brand-page-section__catelog container-fluid">
+			<div class="section-title">Nourish your dog in a whole new way</div>
+			<div class="brand-page-section__catelog--content flex-box container">
+				<div class="col">
+					<div class="single-view">
+						<div class="single-view__head">Complete nutrition all in one resealable bag</div>
+						<div class="single-view__sub-head">Simply scoop, serve and store in your pantry.</div>
+						<div class="single-view__img"><img src="images/nutritions/nutrition-feature.png" alt="Dog food in bowl surrounded by protein. Chewy beef, fish and chicken; crunchy bites, and dried sweet potato and green beans." /> </div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="item-wrapper">
+						<div class="single-item">
+							<div class="single-item__img"><img src="images/nutritions/nutri-product2.png" /></div>
+							<div class="single-item__headline">True Meals Multi-Protein Dry Puppy Food</div>
+							<div class="single-item__cta"><a href="">Shop Now</a></div>
+						</div>
+						<div class="single-item">
+							<div class="single-item__img"><img src="images/nutritions/nutri-product3.png" /></div>
+							<div class="single-item__headline">True Meals Multi-Protein Adult Dry Dog Food</div>
+							<div class="single-item__cta"><a href="">Shop Now</a></div>
+						</div>
+						<div class="single-item">
+							<div class="single-item__img"><img src="images/nutritions/nutri-product4.png" /></div>
+							<div class="single-item__headline">True Meals Chicken Recipe Adult Dry Dog Food</div>
+							<div class="single-item__cta"><a href="">Shop Now</a></div>
+						</div>
+						<div class="single-item">
+							<div class="single-item__img"><img src="images/nutritions/nutri-product1.png" /></div>
+							<div class="single-item__headline">True Meals Multi-Protein Small Breed Dry Dog Food</div>
+							<div class="single-item__cta"><a href="">Shop Now</a></div>
+						</div>
+					</div>
+					
+				</div>			
 			</div>
 		</div>
 
