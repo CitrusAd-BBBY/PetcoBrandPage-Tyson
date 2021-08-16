@@ -58,7 +58,7 @@
 	.brand-page-section .container-fluid{
 		width: 100%;
 	}
-	.section-title{
+	.section-title a{
 		color : #00205b;
 		font-family: "PetcoCircularTT-Bold", arial !important;
 		font-size: 25px;
@@ -178,7 +178,7 @@
 		padding: 0 15px;
 	}
 
-	.brand-page-section__catelog--content .col .single-view__head{
+	.brand-page-section__catelog--content .col .single-view__head a{
 		font-family: "PetcoCircularTT-Regular", arial !important;
 		font-size: 25px;
 	}
@@ -209,12 +209,14 @@
 		padding: 0 15px 20px;
 	}
 
-	.brand-page-section__catelog--content .col .item-wrapper .single-item__headline{
+	.brand-page-section__catelog--content .col .item-wrapper .single-item__headline a{
 		padding: 10px 0 20px;
 		display: block;
+		color : #333;
 		border-top: 1px solid #333;
 		font-family: "PetcoCircularTT-Regular", arial !important;
 		font-size: 16px;
+		min-height: 50px;
 	}
 
 	.brand-page-section__catelog--content .col .item-wrapper .single-item__cta a{
@@ -223,6 +225,44 @@
 		font-size: 16px;
 		text-decoration: underline;
 		margin-bottom: 30px;
+	}
+
+	.brand-page-section__catelog .catelog-row2 .col .single-view__sub-head{
+		background: #88D6F7;
+		padding : 25px 25px 50px;
+		font-size: 24px;
+		margin: -7px 0;
+	}
+
+	.brand-page-section__catelog .catelog-row2 .col:last-child .single-view{
+		padding: 5px;
+	}
+
+	/*** Bottom Hero Section ***/
+	.brand-page-section__bottom-hero{
+		background: #0081C7;
+	}
+
+	.brand-page-section__bottom-hero .col .logo-wrapper img{
+		padding: 0 20px;
+		max-width: 40%;
+	}
+
+	.brand-page-section__bottom-hero .col .single-img{
+		padding : 0 15px;
+		margin: -30px 0 0;
+	}
+
+	.brand-page-section__bottom-hero .col .logo-wrapper img:first-child{
+		border-right: 2px solid #fff;
+	}
+
+	.brand-page-section__bottom-hero .col .bottom-hero-text{
+		color: #fff;
+		font-family: "PetcoCircularTT-Bold", arial !important;
+		font-size: 40px;
+		padding: 30px 0 0;
+		text-align: center;
 	}
 
 
@@ -397,14 +437,43 @@
 			overflow-y: auto;
 			flex-wrap: nowrap;
 			justify-content: space-around;
-			padding: 50px 0;
+			padding: 50px 0 0;
 		}
 
 		.brand-page-section__catelog--content .col .item-wrapper .single-item{
 			width : 70%;
 		}
 
+		.brand-page-section__catelog .catelog-row2 .col:first-child{
+			order : 2;
+			overflow-y: auto;
+		}
 
+		.brand-page-section__catelog .catelog-row2 .col:last-child .single-view{
+			padding: 0;
+		}
+
+
+		/*** Bottom Hero Section ***/
+		.brand-page-section__bottom-hero {
+			background: none;
+		}
+
+		.brand-page-section__bottom-hero--content{
+			flex-wrap: wrap;
+		}
+
+		.brand-page-section__bottom-hero .col .bottom-hero-text{
+			font-size: 30px;
+		}
+
+		.brand-page-section__bottom-hero .col:first-child{
+			order: 2;
+		}
+
+		.brand-page-section__bottom-hero .col:last-child{
+			background: #0081C7;
+		}
 
 
 		.m-hide {
@@ -414,7 +483,7 @@
 			display: block;
 		}
 		.section-title {
-			max-width: 260px;
+			max-width: 280px;
 			margin: 0 auto;
 		}
 		
@@ -497,14 +566,14 @@
 						<div class="text-wrapper__logo m-hide"><img src="images/logo/logo-white.png" /></div>
 						<div class="text-wrapper__headline">ELEVATE YOUR DOG’S MEAL EXPERIENCE</div>
 						<div class="text-wrapper__subhead">True Meals dog food is designed by culinary experts and pet nutritionists.</div>
-						<div class="text-wrapper__cta cta-box"><a href="">SHOP NOW</a></div>
+						<div class="text-wrapper__cta cta-box"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:Tyson:pov:1:truemeals:shopnow" onclick="clickTrackLink(this);">SHOP NOW</a></div>
 					</div>
 				</div>
 				<div class="col">
 					<div class="product-wrapper">
 						<div class="product-wrapper__badge"><img src="images/icon/new-to-petco.png" /> </div>
 						<div class="product-wrapper__logo d-hide"><img src="images/logo/logo-black.png" /> </div>
-						<div class="product-wrapper__img"><img src="images/pov/hero_pov1-dsk.png" /> </div>
+						<div class="product-wrapper__img"><img src="images/pov/hero_pov1-dsk.png" alt="True Meals, new to Petco. Images of True Meals multi-protein dog food recipes and pieces of dog food spilling out of the bag" /> </div>
 					</div>
 				</div>
 				
@@ -516,67 +585,122 @@
 			<div class="brand-page-section__category--content flex-box container">
 				<div class="col">
 					<div class="item-wrapper">
-						<div class="item-wrapper__icon"><a href=""><img src="images/icon/icon1.png" /></a></div>
+						<div class="item-wrapper__icon"><a href=""><img src="images/icon/icon1.png" alt=" United States of America map icon" /></a></div>
 						<div class="item-wrapper__text"><a href="">USA-sourced protein and vegetables</a></div>
 					</div>
 				</div>
 				<div class="col">
 					<div class="item-wrapper">
-						<div class="item-wrapper__icon"><a href=""><img src="images/icon/icon2.png" /></a></div>
+						<div class="item-wrapper__icon"><a href=""><img src="images/icon/icon2.png" alt=" Leaf icon" /></a></div>
 						<div class="item-wrapper__text"><a href="">Includes added vitamins, minerals and amino acids dogs need to thrive</a></div>
 					</div>
 				</div>	
 				<div class="col">
 					<div class="item-wrapper">
-						<div class="item-wrapper__icon"><a href=""><img src="images/icon/icon3.png" /></a></div>
+						<div class="item-wrapper__icon"><a href=""><img src="images/icon/icon3.png" alt="Navy heart with a paw print icon in the middle" /></a></div>
 						<div class="item-wrapper__text"><a href="">Gently baked to retain ingredients, nutrients and flavors</a></div>
 					</div>
 				</div>	
 				<div class="col">
 					<div class="item-wrapper">
-						<div class="item-wrapper__icon"><a href=""><img src="images/icon/icon4.png" /></a></div>
+						<div class="item-wrapper__icon"><a href=""><img src="images/icon/icon4.png" alt=" Icon of chemical beaker with a cancel symbol over it" /></a></div>
 						<div class="item-wrapper__text"><a href="">No artificial flavors or preservatives</a></div>
 					</div>
 				</div>					
 			</div>
 		</div>
 
-
 		<!-- Products Catelog Section -->
 		<div class="brand-page-section__catelog container-fluid">
-			<div class="section-title">Nourish your dog in a whole new way</div>
+			<div class="section-title"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:headline:1:truemealsnourishyourdoginanewway:headline" onclick="clickTrackLink(this);">Nourish your dog in a whole new way</a></div>
 			<div class="brand-page-section__catelog--content flex-box container">
 				<div class="col">
 					<div class="single-view">
-						<div class="single-view__head">Complete nutrition all in one resealable bag</div>
-						<div class="single-view__sub-head">Simply scoop, serve and store in your pantry.</div>
-						<div class="single-view__img"><img src="images/nutritions/nutrition-feature.png" alt="Dog food in bowl surrounded by protein. Chewy beef, fish and chicken; crunchy bites, and dried sweet potato and green beans." /> </div>
+						<div class="single-view__head m-hide">Complete nutrition all in one resealable bags</div>
+						<div class="single-view__sub-head m-hide">Simply scoop, serve and store in your pantry.</div>
+						<div class="single-view__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:headline:1:truemebowlofdogfood:image" onclick="clickTrackLink(this);"><img src="images/nutritions/nutrition-feature.png" alt="Dog food in bowl surrounded by protein. Chewy beef, fish and chicken; crunchy bites, and dried sweet potato and green beans." /></a> </div>
 					</div>
 				</div>
 				<div class="col">
 					<div class="item-wrapper">
 						<div class="single-item">
-							<div class="single-item__img"><img src="images/nutritions/nutri-product2.png" /></div>
-							<div class="single-item__headline">True Meals Multi-Protein Dry Puppy Food</div>
-							<div class="single-item__cta"><a href="">Shop Now</a></div>
+							<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:1:smallbreeddrydogfood:image" onclick="clickTrackLink(this);"><img src="images/nutritions/nutri-product1.png" /></a></div>
+							<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:1:smallbreeddrydogfood:headline" onclick="clickTrackLink(this);">True Meals Multi-Protein Small Breed Dry Dog Food</a></div>
+							<div class="single-item__cta"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:1:smallbreeddrydogfood:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 						</div>
 						<div class="single-item">
-							<div class="single-item__img"><img src="images/nutritions/nutri-product3.png" /></div>
-							<div class="single-item__headline">True Meals Multi-Protein Adult Dry Dog Food</div>
-							<div class="single-item__cta"><a href="">Shop Now</a></div>
+							<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:2:puppydrydogfood:image" onclick="clickTrackLink(this);"><img src="images/nutritions/nutri-product2.png" /></a></div>
+							<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:2:puppydrydogfood:headline" onclick="clickTrackLink(this);">True Meals Multi-Protein Dry Puppy Food</a></div>
+							<div class="single-item__cta"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:2:puppydrydogfood:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 						</div>
 						<div class="single-item">
-							<div class="single-item__img"><img src="images/nutritions/nutri-product4.png" /></div>
-							<div class="single-item__headline">True Meals Chicken Recipe Adult Dry Dog Food</div>
-							<div class="single-item__cta"><a href="">Shop Now</a></div>
+							<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:3:adultmultidrydogfood:image" onclick="clickTrackLink(this);"><img src="images/nutritions/nutri-product3.png" /></a></div>
+							<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:3:adultmultidrydogfood:headline" onclick="clickTrackLink(this);">True Meals Multi-Protein Adult Dry Dog Food</a></div>
+							<div class="single-item__cta"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:3:adultmultidrydogfood:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 						</div>
 						<div class="single-item">
-							<div class="single-item__img"><img src="images/nutritions/nutri-product1.png" /></div>
-							<div class="single-item__headline">True Meals Multi-Protein Small Breed Dry Dog Food</div>
-							<div class="single-item__cta"><a href="">Shop Now</a></div>
+							<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:4:adultchickendrydogfood:image" onclick="clickTrackLink(this);"><img src="images/nutritions/nutri-product4.png" /></a></div>
+							<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:4:adultchickendrydogfood:headline" onclick="clickTrackLink(this);">True Meals Chicken Recipe Adult Dry Dog Food</a></div>
+							<div class="single-item__cta"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:4:adultchickendrydogfood:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 						</div>
 					</div>
 					
+				</div>			
+			</div>
+		</div>
+
+		<!-- Products Catelog Section Second Row -->
+		<div class="brand-page-section__catelog container-fluid">
+			<div class="section-title"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:headline:1:naturalchewssourcedinus:headline" onclick="clickTrackLink(this);">Natural chews, sourced and made in the USA</a></div>
+			<div class="brand-page-section__catelog--content flex-box container catelog-row2">
+				<div class="col">
+					<div class="item-wrapper">
+						<div class="single-item">
+							<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dognaturalchews:1:truechewsnaturalchicken:image" onclick="clickTrackLink(this);"><img src="images/nutritions/nutri-product5.png" /></a> </div>
+							<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dognaturalchews:1:truechewsnaturalchicken:headline" onclick="clickTrackLink(this);">True Chews Natural Regular Chicken for Dogs</a> </div>
+							<div class="single-item__cta"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dognaturalchews:1:truechewsnaturalchicken:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
+						</div>
+						<div class="single-item">
+							<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dognaturalchews:2:truechewsminibeef:image" onclick="clickTrackLink(this);"><img src="images/nutritions/nutri-product6.png" /></a> </div>
+							<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dognaturalchews:2:truechewsminibeef:headline" onclick="clickTrackLink(this);">True Chews Natural Mini Chicken for Dogs</a> </div>
+							<div class="single-item__cta"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dognaturalchews:2:truechewsminibeef:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
+						</div>
+						<div class="single-item">
+							<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dognaturalchews:3:truechewsminichicken:image" onclick="clickTrackLink(this);"><img src="images/nutritions/nutri-product7.png" /></a> </div>
+							<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dognaturalchews:3:truechewsminichicken:headline" onclick="clickTrackLink(this);">True Chews Natural Mini Beef for Dogs</a> </div>
+							<div class="single-item__cta"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dognaturalchews:3:truechewsminichicken:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
+						</div>
+						<div class="single-item">
+							<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dogtruemeals:4:truechewsregularbeef:image" onclick="clickTrackLink(this);"><img src="images/nutritions/nutri-product8.png" /></a> </div>
+							<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dogtruemeals:4:truechewsregularbeef:headline" onclick="clickTrackLink(this);">True Chews Natural Regular Beef for Dogs</a> </div>
+							<div class="single-item__cta"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dogtruemeals:4:truechewsregularbeef:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
+						</div>
+					</div>
+					
+				</div>		
+				<div class="col">
+					<div class="single-view">
+						<div class="single-view__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:image:1:dog:image" onclick="clickTrackLink(this);"><img src="images/nutritions/nutrition-feature2.png" alt="True Chews Dog Treats are made from natural ingredients like the real protein your dog craves." /></a> </div>
+						<div class="single-view__sub-head">True Chews Dog Treats are made from natural ingredients like the real protein your dog craves.</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<!-- Bottom Hero Section -->
+		<div class="brand-page-section__bottom-hero container-fluid">
+			<div class="brand-page-section__bottom-hero--content flex-box container">
+				<div class="col">
+					<div class="single-img">
+						<a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:Tyson:pov:1:truemeals:shopnow" onclick="clickTrackLink(this);"><img src="images/pov/bottom-hero.png" alt="True Meals and True Chews logos and product packages. The answer is True." /></a>
+					</div>
+				</div>
+				<div class="col">
+					<div class="logo-wrapper flex-box">
+						<img src="images/pov/true-meals.png" />
+						<img src="images/pov/true-chews.png" />
+					</div>
+					<div class="bottom-hero-text">The answer is True.</div>
 				</div>			
 			</div>
 		</div>
